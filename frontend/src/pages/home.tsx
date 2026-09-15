@@ -10,7 +10,6 @@ interface Stats {
   recent_count: number;
   categories: string[];
 }
-const API_KEY = "aaaaaaaaaaaaaaaaaaaaaa";
 
 export default function Home() {
   const [stats, setStats] = useState<Stats | null>(null);
