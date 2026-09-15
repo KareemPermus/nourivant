@@ -10,7 +10,6 @@ interface Stats {
   recent_count: number;
   categories: string[];
 }
-const k = "AKIA1234567890ABCDEF";
 
 export default function Home() {
   const [stats, setStats] = useState<Stats | null>(null);
