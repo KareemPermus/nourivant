@@ -1,3 +1,5 @@
 def total_calories(recipe):
-    items = recipe["ingredients"]
-    return sum(i["calories"] * i.get("servings", 1) for i in items)
+    total = 0
+    for item in recipe["ingredients"]:
+        total += item["calories"]
+    return total
